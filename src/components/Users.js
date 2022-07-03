@@ -9,12 +9,14 @@ class Users extends Component {
   // state must be an object 
   constructor() {
     super();
+    // this initializes state
     this.state = {
       showUsers: true,
       more: 'Test'
     };
   }
   
+  // reference the current state with curState 
   toggleUsersHandler() {
     this.setState((curState) => {
       return { showUsers: !curState.showUsers}
